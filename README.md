@@ -376,71 +376,59 @@ These are **model interactions**, not evidence of causal physical interactions.
 
 # 📸 Visual Results
 
-The figures below are extracted from the **executed Kaggle notebook** and are stored in the repository under [`figures/`](figures/).
+The figures below are extracted directly from the **executed Kaggle notebook** and stored in the repository under [`figures/`](figures/).
 
-> **GitHub note:** These images will render automatically when this `README.md` is placed at the repository root together with the `figures/` directory.
+> **GitHub rendering:** the images use HTML tables so that two figures appear side by side on the repository README page.
 
-### Emergence and Scaling
+## Emergence and Scaling
 
-<p align="center">
-  <img src="figures/fig_01_cell_10_plt_figure_figsize_8_6.png" width="850">
-</p>
+<table>
+<tr>
+<td align="center"><img src="figures/fig_01_cell_10_plt_figure_figsize_8_6.png" width="480"></td>
+<td align="center"><img src="figures/fig_02_cell_24_plt_figure_figsize_8_5.png" width="480"></td>
+</tr>
+</table>
 
-<p align="center">
-  <img src="figures/fig_02_cell_24_plt_figure_figsize_8_5.png" width="850">
-</p>
+## Flare Productivity
 
-### Flare Productivity
+<table>
+<tr>
+<td align="center"><img src="figures/fig_03_cell_37_plt_figure.png" width="480"></td>
+<td align="center"><img src="figures/fig_04_cell_38_plot_data_flare_data.png" width="480"></td>
+</tr>
+</table>
 
-<p align="center">
-  <img src="figures/fig_03_cell_37_plt_figure.png" width="850">
-</p>
+## Machine Learning Results
 
-<p align="center">
-  <img src="figures/fig_04_cell_38_plot_data_flare_data.png" width="850">
-</p>
+<table>
+<tr>
+<td align="center"><img src="figures/fig_05_cell_55_print.png" width="480"></td>
+<td align="center"><img src="figures/fig_06_cell_59_plot_phi_flare_reg.png" width="480"></td>
+</tr>
+<tr>
+<td align="center"><img src="figures/fig_07_cell_60_plot_phi_flare_reg.png" width="480"></td>
+<td align="center"><img src="figures/fig_08_cell_68_plt_figure_figsize_9_6.png" width="480"></td>
+</tr>
+</table>
 
-### Machine Learning Results
+## Explainable AI — SHAP
 
-<p align="center">
-  <img src="figures/fig_05_cell_55_print.png" width="850">
-</p>
+<table>
+<tr>
+<td align="center"><img src="figures/fig_09_cell_69_import_shap.png" width="480"></td>
+<td align="center"><img src="figures/fig_10_cell_72_shap_dependence_plot.png" width="480"></td>
+</tr>
+<tr>
+<td align="center"><img src="figures/fig_11_cell_73_shap_dependence_plot.png" width="480"></td>
+<td align="center"><img src="figures/fig_12_cell_74_shap_dependence_plot.png" width="480"></td>
+</tr>
+<tr>
+<td align="center"><img src="figures/fig_13_cell_76_plt_figure_figsize_8_6.png" width="480"></td>
+<td></td>
+</tr>
+</table>
 
-<p align="center">
-  <img src="figures/fig_06_cell_59_plot_phi_flare_reg.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_07_cell_60_plot_phi_flare_reg.png" width="850">
-</p>
-
-### Explainable AI — SHAP
-
-<p align="center">
-  <img src="figures/fig_08_cell_68_plt_figure_figsize_9_6.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_09_cell_69_import_shap.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_10_cell_72_shap_dependence_plot.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_11_cell_73_shap_dependence_plot.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_12_cell_74_shap_dependence_plot.png" width="850">
-</p>
-
-<p align="center">
-  <img src="figures/fig_13_cell_76_plt_figure_figsize_8_6.png" width="850">
-</p>
-
-For the complete figure set, see [`figures/README.md`](figures/README.md).
+For the complete figure set and notebook-cell provenance, see [`figures/README.md`](figures/README.md).
 
 ---
 
