@@ -1,0 +1,7 @@
+feature,mean_importance,std_importance
+Phi_max_1e21_Mx,0.760692,0.155417
+alpha_mean,0.029775,0.048483
+alpha_sat,0.027016,0.031302
+alpha_mean_std,0.005788,0.011729
+R_av_1e20_Mx_per_h,-0.011643,0.100036
+alpha_sat_std,-0.016148,0.023891

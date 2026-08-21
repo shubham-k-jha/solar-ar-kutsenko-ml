@@ -1,0 +1,7 @@
+feature,mean_abs_SHAP
+Phi_max_1e21_Mx,0.105927
+alpha_sat,0.028953
+alpha_mean,0.025565
+R_av_1e20_Mx_per_h,0.022639
+alpha_mean_std,0.014195
+alpha_sat_std,0.00644

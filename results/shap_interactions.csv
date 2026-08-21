@@ -1,0 +1,16 @@
+feature_1,feature_2,mean_abs_interaction
+R_av_1e20_Mx_per_h,alpha_sat,0.006008
+Phi_max_1e21_Mx,alpha_sat,0.005945
+Phi_max_1e21_Mx,alpha_mean,0.004395
+Phi_max_1e21_Mx,R_av_1e20_Mx_per_h,0.003366
+R_av_1e20_Mx_per_h,alpha_mean,0.001619
+alpha_mean,alpha_mean_std,0.001537
+Phi_max_1e21_Mx,alpha_mean_std,0.001452
+alpha_sat,alpha_mean,0.00101
+alpha_sat_std,alpha_mean_std,0.000864
+alpha_sat,alpha_mean_std,0.000782
+R_av_1e20_Mx_per_h,alpha_mean_std,0.000775
+alpha_sat,alpha_sat_std,0.000654
+Phi_max_1e21_Mx,alpha_sat_std,0.00064
+alpha_mean,alpha_sat_std,0.000557
+R_av_1e20_Mx_per_h,alpha_sat_std,0.000533

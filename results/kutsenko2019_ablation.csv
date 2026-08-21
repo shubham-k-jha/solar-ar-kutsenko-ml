@@ -1,0 +1,5 @@
+Model,N_features,R2,R2_std,MAE,RMSE
+Phi only,1,0.47338,0.093128,0.678084,0.937471
+Phi + separation,2,0.464837,0.099251,0.681018,0.945013
+Phi + separation + duration,3,0.931531,0.017978,0.172275,0.338975
+All features,8,0.916882,0.021417,0.189561,0.373385

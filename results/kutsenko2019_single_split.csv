@@ -1,0 +1,5 @@
+Model,R2,MAE,RMSE
+Kutsenko power law,0.598724,0.57455,0.786792
+Linear regression,0.827109,0.411222,0.516446
+Random Forest,0.725854,0.486517,0.650323
+Gradient Boosting,0.924484,0.182277,0.341316
