@@ -156,3 +156,4 @@ No feature after the forecast cutoff should enter a prediction snapshot.
 **Physics-Informed Machine Learning for Solar Active Regions and Flare Productivity**
 
 This is a strong Data Science portfolio project because it demonstrates scientific data cleaning, statistical modelling, feature engineering, cross-validation, classification, regression, XGBoost, SHAP, permutation importance, feature ablation and leakage-aware forecasting design.
+# solar-ar-kutsenko-ml
