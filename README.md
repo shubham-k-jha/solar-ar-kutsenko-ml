@@ -376,37 +376,71 @@ These are **model interactions**, not evidence of causal physical interactions.
 
 # 📸 Visual Results
 
-The principal figures below are extracted directly from the executed Kaggle notebook.
+The figures below are extracted from the **executed Kaggle notebook** and are stored in the repository under [`figures/`](figures/).
+
+> **GitHub note:** These images will render automatically when this `README.md` is placed at the repository root together with the `figures/` directory.
 
 ### Emergence and Scaling
 
-![Kutsenko analysis](figures/fig_01_cell_05_plot.png)
+<p align="center">
+  <img src="figures/fig_01_cell_10_plt_figure_figsize_8_6.png" width="850">
+</p>
 
-![Kutsenko analysis](figures/fig_02_cell_07_plot.png)
+<p align="center">
+  <img src="figures/fig_02_cell_24_plt_figure_figsize_8_5.png" width="850">
+</p>
 
 ### Flare Productivity
 
-![Flare productivity](figures/fig_03_cell_12_plot.png)
+<p align="center">
+  <img src="figures/fig_03_cell_37_plt_figure.png" width="850">
+</p>
 
-![Flare productivity](figures/fig_04_cell_15_plot.png)
+<p align="center">
+  <img src="figures/fig_04_cell_38_plot_data_flare_data.png" width="850">
+</p>
 
-### Machine Learning
+### Machine Learning Results
 
-![Machine learning](figures/fig_05_cell_18_plot.png)
+<p align="center">
+  <img src="figures/fig_05_cell_55_print.png" width="850">
+</p>
 
-![Machine learning](figures/fig_06_cell_20_plot.png)
+<p align="center">
+  <img src="figures/fig_06_cell_59_plot_phi_flare_reg.png" width="850">
+</p>
 
-### Explainable AI
+<p align="center">
+  <img src="figures/fig_07_cell_60_plot_phi_flare_reg.png" width="850">
+</p>
 
-![SHAP analysis](figures/fig_07_cell_24_plot.png)
+### Explainable AI — SHAP
 
-![SHAP analysis](figures/fig_08_cell_25_plot.png)
+<p align="center">
+  <img src="figures/fig_08_cell_68_plt_figure_figsize_9_6.png" width="850">
+</p>
 
-![Feature analysis](figures/fig_09_cell_27_plot.png)
+<p align="center">
+  <img src="figures/fig_09_cell_69_import_shap.png" width="850">
+</p>
 
-![Model analysis](figures/fig_10_cell_29_plot.png)
+<p align="center">
+  <img src="figures/fig_10_cell_72_shap_dependence_plot.png" width="850">
+</p>
 
-> The complete set of notebook-generated figures is available in [`figures/`](figures/).
+<p align="center">
+  <img src="figures/fig_11_cell_73_shap_dependence_plot.png" width="850">
+</p>
+
+<p align="center">
+  <img src="figures/fig_12_cell_74_shap_dependence_plot.png" width="850">
+</p>
+
+<p align="center">
+  <img src="figures/fig_13_cell_76_plt_figure_figsize_8_6.png" width="850">
+</p>
+
+For the complete figure set, see [`figures/README.md`](figures/README.md).
 
 ---
 
