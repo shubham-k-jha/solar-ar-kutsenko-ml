@@ -1,158 +1,220 @@
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:071E3D,30:1F4287,65:6C63FF,100:00D4FF&height=230&section=header&text=Solar%20Active-Region%20ML&fontSize=39&fontColor=FFFFFF&fontAlignY=36&desc=Solar%20Physics%20%7C%20Statistical%20Learning%20%7C%20Explainable%20AI&descAlignY=59&descSize=16&animation=fadeIn" width="100%" alt="Solar Active-Region Machine Learning banner"/>
+
 # ☀️ Physics-Informed Machine Learning for Solar Active Regions
 
-<p align="center">
+### From magnetic-flux emergence to flare productivity
 
-**Solar Physics • Statistical Learning • Machine Learning • Explainable AI • Flare Productivity**
+A scientific machine-learning project investigating the relationship between emerging solar active-region properties and flare productivity using published Kutsenko catalogues, statistical analysis, controlled feature ablation, and explainable AI.
 
-</p>
+<br/>
 
-<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn"/>
+<img src="https://img.shields.io/badge/XGBoost-189FDD?style=for-the-badge" alt="XGBoost"/>
+<img src="https://img.shields.io/badge/SHAP-8A2BE2?style=for-the-badge" alt="SHAP"/>
+<img src="https://img.shields.io/badge/Solar_Physics-FFB000?style=for-the-badge" alt="Solar Physics"/>
+<img src="https://img.shields.io/badge/Research-Active-16A34A?style=for-the-badge" alt="Research project"/>
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-Machine%20Learning-F7931E?logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-189FDD)
-![SHAP](https://img.shields.io/badge/SHAP-Explainable%20AI-8A2BE2)
-![Solar Physics](https://img.shields.io/badge/Domain-Solar%20Physics-FFB000)
-![Status](https://img.shields.io/badge/Status-Active%20Research-2EA44F)
+<br/><br/>
 
-</p>
+<a href="https://github.com/shubham-k-jha/solar-ar-kutsenko-ml">
+<img src="https://img.shields.io/badge/Repository-Explore-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore repository"/>
+</a>
+<a href="notebooks/flare-ml-kutsenko-2019-2021.ipynb">
+<img src="https://img.shields.io/badge/Notebook-Analysis-6C63FF?style=for-the-badge" alt="Open analysis notebook"/>
+</a>
+<a href="METHODOLOGY.md">
+<img src="https://img.shields.io/badge/Methodology-Read-0891B2?style=for-the-badge" alt="Read methodology"/>
+</a>
 
-> A physics-informed machine-learning study of **emerging solar active regions, magnetic-flux emergence, and flare productivity**, using published Kutsenko catalogues as a benchmark and building toward time-resolved HMI/SHARP forecasting.
+</div>
 
 ---
 
-## 🔭 Project Overview
+## 🔭 Research Overview
 
-Solar active regions evolve through magnetic-flux emergence, polarity separation, and magnetic-field restructuring. Some regions subsequently produce powerful solar flares and CMEs, while others remain relatively quiet.
+Solar active regions emerge and evolve through magnetic-flux emergence, polarity separation, and changes in magnetic-field structure. Some regions produce powerful solar flares, while others remain comparatively quiet.
 
-This project investigates:
+This project investigates a central question:
 
-> **How much can measurable properties of emerging active regions explain magnetic-flux emergence and flare productivity, and which variables provide genuinely useful predictive information?**
+> **How much can measurable properties of emerging solar active regions explain magnetic-flux emergence and flare productivity, and which features provide useful predictive information beyond correlated physical quantities?**
 
-The project combines solar physics with a complete data-science workflow:
+The research combines solar physics, statistical analysis, machine learning, and model interpretation.
 
-```text
-Published Solar-Physics Catalogues
-              │
-              ▼
-       Data Quality Audit
-              │
-              ▼
-     Statistical Relationships
-              │
-       ┌──────┴──────┐
-       ▼             ▼
-Emergence-Rate    Flare-Productivity
-    Modelling         Modelling
-       │             │
-       └──────┬──────┘
-              ▼
-      Feature Ablation
-              │
-              ▼
-     Explainable Machine
-          Learning
-       ┌──────┼──────┐
-       ▼      ▼      ▼
-     SHAP   Perm.   Interactions
-            Importance
-              │
-              ▼
-      Physical Interpretation
-              │
-              ▼
-     HMI/SHARP Time-Series
-          Forecasting
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+<img src="https://img.shields.io/badge/01-6C63FF?style=for-the-badge" alt="01"/>
+
+### 📡 Catalogue Analysis
+
+<sub>Published active-region measurements and scientific relationships</sub>
+
+</td>
+<td align="center" width="33%">
+
+<img src="https://img.shields.io/badge/02-0891B2?style=for-the-badge" alt="02"/>
+
+### 🤖 Machine Learning
+
+<sub>Emergence-rate modelling and flare-productivity prediction</sub>
+
+</td>
+<td align="center" width="33%">
+
+<img src="https://img.shields.io/badge/03-16A34A?style=for-the-badge" alt="03"/>
+
+### 🔬 Explainability
+
+<sub>Feature ablation, SHAP, permutation importance, and physical interpretation</sub>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### 🧭 Research pipeline
+
+```mermaid
+flowchart TD
+    A["📚 Published Kutsenko Catalogues"] --> B["🔍 Data Quality Audit"]
+    B --> C["📈 Statistical Relationships"]
+    C --> D["🧮 Feature Engineering"]
+    D --> E["🤖 Machine Learning Benchmarks"]
+    E --> F["🧪 Controlled Feature Ablation"]
+    F --> G["🔬 SHAP & Permutation Importance"]
+    G --> H["☀️ Physical Interpretation"]
+    H --> I["🛰️ Future HMI/SHARP Forecasting"]
+
+    style A fill:#243B55,color:#fff,stroke:#00D4FF
+    style B fill:#3D348B,color:#fff,stroke:#A78BFA
+    style C fill:#22577A,color:#fff,stroke:#38BDF8
+    style D fill:#7C3AED,color:#fff,stroke:#C4B5FD
+    style E fill:#B45309,color:#fff,stroke:#FCD34D
+    style F fill:#9B5DE5,color:#fff,stroke:#E9D5FF
+    style G fill:#0369A1,color:#fff,stroke:#7DD3FC
+    style H fill:#006D77,color:#fff,stroke:#83C5BE
+    style I fill:#166534,color:#fff,stroke:#86EFAC
 ```
 
 ---
 
-# 🎯 Research Objectives
+## 🎯 Research Objectives
 
-### 1. Emerging active regions
-
-Investigate how maximum magnetic flux, emergence rate, emergence duration, polarity separation, and other properties are related.
-
-### 2. Flare productivity
-
-Determine whether magnetic properties can distinguish flare-productive and non-productive active regions.
-
-### 3. Continuous prediction
-
-Predict the magnitude of flare productivity rather than treating the problem only as binary classification.
-
-### 4. Explainable ML
-
-Determine which features the models actually use and whether apparently important variables contain independent information.
-
-### 5. Future forecasting
-
-Extend the retrospective catalogue analysis into a genuinely time-aware forecasting system using HMI/SHARP measurements.
-
----
-
-# 📚 Scientific Foundation
-
-The project uses published studies by Kutsenko and collaborators as its scientific foundation.
-
-| Study | Role |
+| Objective | Scientific question |
 |---|---|
-| **Kutsenko et al. 2019** | Emerging active-region magnetic-flux and emergence-rate scaling |
-| **Kutsenko et al. 2021** | Early-stage flare-productivity relationships |
-| **Kutsenko, Abramenko & Plotnikov 2024** | Statistical context for emerging regions and strong flares |
-| **ApJ 806, 245** | Energy/helicity-flux methodology used in the SHARP extension |
-
-### References
-
-- **Kutsenko et al. (2019)** — [DOI: 10.1093/mnras/stz308](https://doi.org/10.1093/mnras/stz308)
-- **Kutsenko et al. (2021)** — [DOI: 10.1093/mnras/staa3548](https://doi.org/10.1093/mnras/staa3548)
-- **Kutsenko, Abramenko & Plotnikov (2024)** — [DOI: 10.1088/1674-4527/ad2e4d](https://doi.org/10.1088/1674-4527/ad2e4d)
-- **Energy/helicity-flux methodology** — [DOI: 10.1088/0004-637X/806/2/245](https://doi.org/10.1088/0004-637X/806/2/245)
+| **Emergence physics** | How are maximum magnetic flux, emergence rate, duration, and polarity separation related? |
+| **Flare productivity** | Can active-region properties distinguish flare-productive from non-productive regions? |
+| **Continuous prediction** | Can a model estimate the magnitude of flare productivity instead of only predicting a class? |
+| **Feature independence** | Do additional features contribute independent predictive information? |
+| **Explainable ML** | Are the model's important features consistent with the underlying physical relationships? |
+| **Future forecasting** | Can time-resolved HMI/SHARP observations predict events that occur after a defined forecast cutoff? |
 
 ---
 
-# 🗂️ Dataset Overview
+## 📚 Scientific Foundation
 
-## Kutsenko 2019
+The project builds on published research by Kutsenko and collaborators.
 
-| Quantity | Value |
+| Reference | Role in this project |
+|---|---|
+| Kutsenko et al. (2019) | Magnetic-flux emergence and emergence-rate scaling |
+| Kutsenko et al. (2021) | Relationships between emerging-region properties and flare productivity |
+| Kutsenko, Abramenko & Plotnikov (2024) | Statistical context for emerging active regions and strong flares |
+| ApJ 806, 245 | Energy- and helicity-flux methodology relevant to the planned SHARP extension |
+
+### Papers
+
+- [Kutsenko et al. (2019) — MNRAS](https://doi.org/10.1093/mnras/stz308)
+- [Kutsenko et al. (2021) — MNRAS](https://doi.org/10.1093/mnras/staa3548)
+- [Kutsenko, Abramenko & Plotnikov (2024)](https://doi.org/10.1088/1674-4527/ad2e4d)
+- [Energy/helicity-flux methodology — ApJ](https://doi.org/10.1088/0004-637X/806/2/245)
+
+---
+
+## 🗂️ Dataset Overview
+
+The current analysis uses two published catalogues. The counts and summary statistics below are reported by the existing project documentation.
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/423-Catalogue_Rows-6C63FF?style=for-the-badge" alt="423 catalogue rows"/>
+
+### Kutsenko 2019
+
+**406 unique HARPs**
+
+<sub>Emergence-rate and magnetic-flux analysis</sub>
+
+</td>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/243-Catalogue_Rows-0891B2?style=for-the-badge" alt="243 catalogue rows"/>
+
+### Kutsenko 2021
+
+**235 unique HARPs**
+
+<sub>Flare-productivity analysis</sub>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### Kutsenko 2019 catalogue
+
+| Quantity | Reported value |
 |---|---:|
-| Catalogue rows | **423** |
-| Unique HARPs | **406** |
-| Kappa | **0.48114** |
-| Polarity-separation exponent | **0.36159** |
+| Catalogue rows | 423 |
+| Unique HARPs | 406 |
+| Kappa | 0.48114 |
+| Polarity-separation exponent | 0.36159 |
 
 Important variables include:
 
 - `Phi_max` — maximum unsigned magnetic flux
 - `R_av` — average magnetic-flux emergence rate
-- emergence duration
-- polarity separation
-- tilt
-- latitude
-- longitude
-- magnetic-field parameters
+- Emergence duration
+- Polarity separation
+- Tilt
+- Latitude and longitude
+- Magnetic-field parameters
 
----
+### Kutsenko 2021 catalogue
 
-## Kutsenko 2021
-
-| Quantity | Value |
+| Quantity | Reported value |
 |---|---:|
-| Catalogue rows | **243** |
-| Unique HARPs | **235** |
-| Flare-productive regions | **34** |
-| Non-productive regions | **209** |
-| Mean flare index | **0.95973** |
-| Maximum flare index | **41.4636** |
+| Catalogue rows | 243 |
+| Unique HARPs | 235 |
+| Flare-productive regions | 34 |
+| Non-productive regions | 209 |
+| Mean flare index | 0.95973 |
+| Maximum flare index | 41.4636 |
+
+**Important:** The relatively small number of flare-productive regions makes uncertainty, class imbalance, and validation strategy central to interpreting the reported results.
 
 ---
 
-# 📈 Kutsenko 2019 — Emergence-Rate Machine Learning
+## 📈 Experiment 1 — Magnetic-Flux Emergence Rate
 
-The first ML experiment predicts average flux-emergence rate from active-region properties.
+The first experiment predicts average emergence rate from active-region properties.
 
-## Model benchmark
+### Model benchmark
+
+<text color="secondary" size="sm">Reported results from the existing analysis</text>
 
 | Model | R² | MAE | RMSE |
 |---|---:|---:|---:|
@@ -161,415 +223,572 @@ The first ML experiment predicts average flux-emergence rate from active-region 
 | Random Forest | 0.726 | 0.487 | 0.650 |
 | **Gradient Boosting** | **0.924** | **0.182** | **0.341** |
 
-### 5-Fold Cross-Validation
+### Five-fold cross-validation
 
-Gradient Boosting achieved:
+<div align="center">
 
-- **CV R² = 0.9169**
-- R² standard deviation = **0.0214**
-- MAE = **0.1896**
-- RMSE = **0.3734**
+<table>
+<tr>
+<td align="center" width="33%">
 
-This demonstrates that the catalogue's emergence-rate relationship is highly predictable.
+<text color="#6C63FF" size="sm">CV R²</text>
+
+# 0.9169
+
+</td>
+<td align="center" width="33%">
+
+<text color="#0891B2" size="sm">MAE</text>
+
+# 0.1896
+
+</td>
+<td align="center" width="33%">
+
+<text color="#16A34A" size="sm">RMSE</text>
+
+# 0.3734
+
+</td>
+</tr>
+</table>
+
+</div>
+
+Reported standard deviation of cross-validation R²: **0.0214**.
+
+These results indicate a strong relationship between the catalogue features and emergence rate under the existing modelling setup. They do not, by themselves, demonstrate forecasting performance on unseen active regions or future observations.
 
 ---
 
-# 🧪 Critical Finding — Emergence Duration
+## 🧪 Critical Experiment — Emergence Duration and Feature Dependence
 
-Feature ablation produced:
+One of the most important findings comes from controlled feature ablation.
 
-| Feature Set | CV R² |
+### Reported ablation results
+
+| Feature set | CV R² |
 |---|---:|
-| Phi only | 0.473 |
-| Phi + separation | 0.465 |
-| **Phi + separation + duration** | **0.932** |
+| `Phi` only | 0.473 |
+| `Phi + separation` | 0.465 |
+| **`Phi + separation + duration`** | **0.932** |
 | All features | 0.917 |
 
-At first glance, this suggests a dramatic independent contribution from emergence duration.
+Adding emergence duration produces a large increase in the reported cross-validation score. But a high score does not automatically mean that the model has discovered an independent physical effect.
 
-However, the notebook performs a crucial diagnostic:
+### The physical relationship
 
-\[
-\Phi_{\max} \sim R_{av}\times t_{\mathrm{emergence}}
-\]
+The existing notebook reports an almost perfect Spearman correlation between the relevant quantities:
 
-with:
+<div align="center">
 
-\[
-\boxed{\rho_{\mathrm{Spearman}}=0.999982}
-\]
+<img src="https://img.shields.io/badge/Spearman_%CF%81-0.999982-6C63FF?style=for-the-badge" alt="Reported Spearman correlation 0.999982"/>
 
-### Interpretation
+</div>
 
-The ML model is largely recovering the underlying relationship:
+The relationship under investigation is:
 
 \[
-\boxed{\Phi_{\max}\approx R_{av}\times t_{\mathrm{emergence}}}
+\Phi_{\max}\approx R_{\mathrm{av}}\times t_{\mathrm{emergence}}
 \]
 
-rather than demonstrating that emergence duration is an independent causal predictor.
+This suggests that emergence duration carries information closely related to the underlying flux-emergence relationship.
 
-This is an important example of why **feature importance must be interpreted together with physical relationships and feature dependence**.
+**Scientific interpretation:** The improvement could reflect a mathematical or physical dependency among features rather than a new, independent causal predictor.
+
+This is why feature ablation must be accompanied by physical reasoning, correlation analysis, and careful interpretation.
 
 ---
 
-# 🔥 Kutsenko 2021 — Flare Productivity
+## 🔥 Experiment 2 — Flare Productivity
 
-The second part investigates whether emerging-region properties can identify flare-productive active regions.
+The second experiment investigates whether properties of emerging active regions can distinguish flare-productive regions from non-productive ones.
 
-## Statistical relationships
+### Statistical relationships
 
-The notebook finds:
-
-| Relationship | Result |
+| Relationship | Reported result |
 |---|---:|
-| Pearson correlation: `R_av` vs flare index | **0.4742** |
-| Spearman correlation: `R_av` vs flare index | **0.3805** |
+| Pearson correlation: `R_av` vs flare index | 0.4742 |
+| Spearman correlation: `R_av` vs flare index | 0.3805 |
 
-Productive regions show higher emergence rates:
+### Emergence rate by productivity group
 
-| Statistic | Productive | Non-productive |
+| Statistic | Productive regions | Non-productive regions |
 |---|---:|---:|
-| Median R_av | **3.056** | 1.778 |
-| Mean R_av | **3.514** | 2.063 |
+| Median `R_av` | 3.056 | 1.778 |
+| Mean `R_av` | 3.514 | 2.063 |
+
+The reported statistics show higher emergence rates among flare-productive regions in this catalogue.
+
+However, differences between group averages do not establish causation, and the degree of overlap between the groups remains important when assessing predictive utility.
 
 ---
 
-# 🎯 Binary Classification
+## 🎯 Binary Classification
 
-The R_av-only baseline gives:
+The classification task predicts whether an active region belongs to the flare-productive group.
 
-- ROC-AUC = **0.7618**
-- PR-AUC = **0.4154**
-- Brier score = **0.1939**
+### Baseline
 
-Controlled feature-ablation results:
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+<text color="#6C63FF" size="sm">ROC-AUC</text>
+
+# 0.7618
+
+</td>
+<td align="center" width="33%">
+
+<text color="#0891B2" size="sm">PR-AUC</text>
+
+# 0.4154
+
+</td>
+<td align="center" width="33%">
+
+<text color="#16A34A" size="sm">Brier score</text>
+
+# 0.1939
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### Controlled feature ablation
 
 | Features | ROC-AUC | PR-AUC | Brier |
 |---|---:|---:|---:|
-| 🥇 **Phi only** | **0.8242** | **0.5977** | 0.1500 |
+| **`Phi` only** | **0.8242** | **0.5977** | 0.1500 |
 | All features | 0.8051 | 0.5877 | **0.1496** |
-| Phi + R_av | 0.8175 | 0.5823 | 0.1512 |
-| R_av + alpha | 0.7872 | 0.4482 | 0.1842 |
-| R_av + alpha uncertainty | 0.7706 | 0.4452 | 0.1851 |
-| R_av only | 0.7618 | 0.4154 | 0.1939 |
+| `Phi + R_av` | 0.8175 | 0.5823 | 0.1512 |
+| `R_av + alpha` | 0.7872 | 0.4482 | 0.1842 |
+| `R_av + alpha uncertainty` | 0.7706 | 0.4452 | 0.1851 |
+| `R_av` only | 0.7618 | 0.4154 | 0.1939 |
 
-### Key result
+### Main result
 
-\[
-\boxed{\mathrm{ROC\!-\!AUC}=0.8242}
-\]
+<div align="center">
 
-\[
-\boxed{\mathrm{PR\!-\!AUC}=0.5977}
-\]
+<img src="https://img.shields.io/badge/Phi_only_ROC--AUC-0.8242-6C63FF?style=for-the-badge" alt="Phi-only ROC-AUC 0.8242"/>
+<img src="https://img.shields.io/badge/Phi_only_PR--AUC-0.5977-0891B2?style=for-the-badge" alt="Phi-only PR-AUC 0.5977"/>
 
-for the Phi-only benchmark.
+</div>
 
-This indicates that maximum unsigned magnetic flux contains substantial information about flare productivity in this retrospective catalogue.
+In the reported comparison, maximum unsigned magnetic flux alone performs better than the all-feature configuration on ROC-AUC and PR-AUC.
+
+That result supports investigating magnetic flux as a strong aggregate signal in this dataset. It does not prove that flux alone is sufficient for operational forecasting.
+
+**Metric caution:** PR-AUC depends on class prevalence and on the convention used to calculate it. Comparisons should use the same validation folds, baseline definition, and scoring implementation.
 
 ---
 
-# 📊 Continuous Flare-Productivity Prediction
+## 📊 Experiment 3 — Continuous Flare-Productivity Prediction
 
-The continuous target is:
+Binary classification and continuous regression answer different questions.
+
+The regression experiment predicts:
 
 \[
 y=\log_{10}(\mathrm{flare\ index})
 \]
 
-## Model comparison
+### Reported model comparison
 
 | Model | CV R² |
 |---|---:|
-| Phi_max only | 0.176 |
-| Multivariate Linear | 0.317 |
+| `Phi_max` only | 0.176 |
+| Multivariate Linear Regression | 0.317 |
 | Random Forest | 0.363 |
 | **XGBoost** | **0.405** |
 
-The best general nonlinear model reaches:
+The reported general nonlinear benchmark reaches a cross-validation R² of **0.405**.
 
-\[
-\boxed{CV-R^2=0.405}
-\]
+### Controlled XGBoost feature ablation
 
----
+The same model family and reported validation procedure are compared across feature sets.
 
-# 🧬 Controlled XGBoost Feature Ablation
-
-The same XGBoost model and validation procedure were used while changing only the feature set.
-
-| Features | CV R² | R² Std | MAE | RMSE |
+| Features | CV R² | R² std | MAE | RMSE |
 |---|---:|---:|---:|---:|
-| 🥇 **Phi_max only** | **0.5435** | 0.0623 | **0.1028** | **0.1771** |
-| Phi_max + R_av | 0.4418 | 0.1433 | 0.1134 | 0.1915 |
+| **`Phi_max` only** | **0.5435** | 0.0623 | **0.1028** | **0.1771** |
+| `Phi_max + R_av` | 0.4418 | 0.1433 | 0.1134 | 0.1915 |
 | All features | 0.4051 | 0.2389 | 0.1165 | 0.1913 |
-| Phi + R_av + alpha | 0.3999 | 0.2324 | 0.1140 | 0.1926 |
-| R_av only | 0.0574 | 0.1834 | 0.1514 | 0.2508 |
+| `Phi + R_av + alpha` | 0.3999 | 0.2324 | 0.1140 | 0.1926 |
+| `R_av` only | 0.0574 | 0.1834 | 0.1514 | 0.2508 |
 
-### Repeated 5-Fold Cross-Validation
+### Repeated five-fold cross-validation
 
-| Model | Mean R² | Std | Median | Min | Max |
+| Model | Mean R² | Std | Median | Minimum | Maximum |
 |---|---:|---:|---:|---:|---:|
-| **Phi_max only** | **0.4993** | 0.2315 | 0.5538 | -0.9691 | 0.8166 |
-| Phi_max + R_av | 0.4009 | 0.3136 | 0.4740 | -1.4673 | 0.7835 |
+| **`Phi_max` only** | **0.4993** | 0.2315 | 0.5538 | -0.9691 | 0.8166 |
+| `Phi_max + R_av` | 0.4009 | 0.3136 | 0.4740 | -1.4673 | 0.7835 |
 | All features | 0.3843 | 0.2953 | 0.4669 | -1.2055 | 0.7828 |
 
-The wide repeated-CV range highlights the uncertainty associated with the relatively small flare-productive sample.
+The wide spread across repeated validation splits highlights uncertainty associated with the small catalogue and limited number of flare-productive regions.
+
+The controlled ablation also shows that **adding more features does not necessarily improve generalization**.
 
 ---
 
-# 🔍 Explainable Machine Learning
+## 🔬 Explainable Machine Learning
 
-## XGBoost Feature Importance
+The project compares multiple interpretation methods to investigate which variables drive the model's predictions.
 
-| Feature | Importance |
+### XGBoost feature importance
+
+| Feature | Reported importance |
 |---|---:|
-| 🥇 **Phi_max** | **0.4716** |
-| R_av | 0.2408 |
-| alpha_sat | 0.1275 |
-| alpha_mean | 0.0684 |
-| alpha_mean_std | 0.0473 |
-| alpha_sat_std | 0.0443 |
+| **`Phi_max`** | **0.4716** |
+| `R_av` | 0.2408 |
+| `alpha_sat` | 0.1275 |
+| `alpha_mean` | 0.0684 |
+| `alpha_mean_std` | 0.0473 |
+| `alpha_sat_std` | 0.0443 |
 
-## SHAP Importance
+### SHAP importance
 
-| Feature | Mean \|SHAP\| |
+| Feature | Mean absolute SHAP |
 |---|---:|
-| 🥇 **Phi_max** | **0.1059** |
-| alpha_sat | 0.0290 |
-| alpha_mean | 0.0256 |
-| R_av | 0.0226 |
-| alpha_mean_std | 0.0142 |
-| alpha_sat_std | 0.0064 |
+| **`Phi_max`** | **0.1059** |
+| `alpha_sat` | 0.0290 |
+| `alpha_mean` | 0.0256 |
+| `R_av` | 0.0226 |
+| `alpha_mean_std` | 0.0142 |
+| `alpha_sat_std` | 0.0064 |
 
-## Out-of-Fold Permutation Importance
+### Out-of-fold permutation importance
 
-| Feature | Mean Importance |
+| Feature | Reported mean importance |
 |---|---:|
-| 🥇 **Phi_max** | **0.7607** |
-| alpha_mean | 0.0298 |
-| alpha_sat | 0.0270 |
-| alpha_mean_std | 0.0058 |
-| R_av | -0.0116 |
-| alpha_sat_std | -0.0161 |
+| **`Phi_max`** | **0.7607** |
+| `alpha_mean` | 0.0298 |
+| `alpha_sat` | 0.0270 |
+| `alpha_mean_std` | 0.0058 |
+| `R_av` | -0.0116 |
+| `alpha_sat_std` | -0.0161 |
 
-The agreement between these interpretation methods strengthens the conclusion that **Phi_max is the dominant aggregate signal** in the current catalogue analysis.
+<div align="center">
+
+<img src="https://img.shields.io/badge/SHAP-Feature_Contributions-8A2BE2?style=for-the-badge" alt="SHAP"/>
+<img src="https://img.shields.io/badge/Permutation-Model_Dependence-0891B2?style=for-the-badge" alt="Permutation importance"/>
+<img src="https://img.shields.io/badge/Ablation-Feature_Utility-16A34A?style=for-the-badge" alt="Feature ablation"/>
+
+</div>
+
+### What do these results mean?
+
+The three methods provide complementary evidence:
+
+- **Model feature importance** summarizes how a fitted tree model uses features under its particular importance definition.
+- **SHAP** attributes predictions to input features relative to a chosen background/reference distribution.
+- **Permutation importance** measures the impact of disrupting a feature on a chosen evaluation score.
+
+The reported agreement around `Phi_max` strengthens the case that magnetic flux is the dominant aggregate signal in the current analysis.
+
+Negative permutation importance does not mean a feature has negative physical importance. It means that, under the reported evaluation procedure, permuting that feature did not improve the measured score and may have improved it.
+
+Correlated features can also complicate all three interpretation methods.
 
 ---
 
-# 🧩 SHAP Interaction Analysis
+## 🧩 SHAP Interaction Analysis
 
-Strongest interaction strengths:
+The existing analysis reports the following strongest interaction strengths.
 
-| Feature Pair | Mean Absolute Interaction |
+| Feature pair | Mean absolute interaction |
 |---|---:|
-| R_av × alpha_sat | 0.00601 |
-| Phi_max × alpha_sat | 0.00595 |
-| Phi_max × alpha_mean | 0.00440 |
-| Phi_max × R_av | 0.00337 |
-| R_av × alpha_mean | 0.00162 |
+| `R_av × alpha_sat` | 0.00601 |
+| `Phi_max × alpha_sat` | 0.00595 |
+| `Phi_max × alpha_mean` | 0.00440 |
+| `Phi_max × R_av` | 0.00337 |
+| `R_av × alpha_mean` | 0.00162 |
 
-These are **model interactions**, not evidence of causal physical interactions.
+These values describe interactions learned by the model. They are **not proof of causal physical interactions** between the corresponding solar quantities.
+
+Physical interpretation requires additional analysis, appropriate controls, and independent evidence.
 
 ---
 
-# 📸 Visual Results
+## 🖼️ Visual Results
 
-The figures below are extracted directly from the **executed Kaggle notebook** and stored in the repository under [`figures/`](figures/).
+The original README identifies these images as figures extracted from the executed Kaggle notebook and stored in `figures/`.
 
-> **GitHub rendering:** the images use HTML tables so that two figures appear side by side on the repository README page.
+### 1. Emergence and scaling
 
-## Emergence and Scaling
+<div align="center">
 
 <table>
 <tr>
-<td align="center"><img src="figures/fig_01_cell_10_plt_figure_figsize_8_6.png" width="480"></td>
-<td align="center"><img src="figures/fig_02_cell_24_plt_figure_figsize_8_5.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_01_cell_10_plt_figure_figsize_8_6.png" width="100%" alt="Emergence and scaling figure 1"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_02_cell_24_plt_figure_figsize_8_5.png" width="100%" alt="Emergence and scaling figure 2"/>
+
+</td>
 </tr>
 </table>
 
-## Flare Productivity
+</div>
+
+### 2. Flare productivity
+
+<div align="center">
 
 <table>
 <tr>
-<td align="center"><img src="figures/fig_03_cell_37_plt_figure.png" width="480"></td>
-<td align="center"><img src="figures/fig_04_cell_38_plot_data_flare_data.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_03_cell_37_plt_figure.png" width="100%" alt="Flare productivity figure 1"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_04_cell_38_plot_data_flare_data.png" width="100%" alt="Flare productivity figure 2"/>
+
+</td>
 </tr>
 </table>
 
-## Machine Learning Results
+</div>
+
+### 3. Machine-learning benchmarks
+
+<div align="center">
 
 <table>
 <tr>
-<td align="center"><img src="figures/fig_05_cell_55_print.png" width="480"></td>
-<td align="center"><img src="figures/fig_06_cell_59_plot_phi_flare_reg.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_05_cell_55_print.png" width="100%" alt="Machine learning benchmark results"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_06_cell_59_plot_phi_flare_reg.png" width="100%" alt="Magnetic flux flare regression figure 1"/>
+
+</td>
 </tr>
 <tr>
-<td align="center"><img src="figures/fig_07_cell_60_plot_phi_flare_reg.png" width="480"></td>
-<td align="center"><img src="figures/fig_08_cell_68_plt_figure_figsize_9_6.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_07_cell_60_plot_phi_flare_reg.png" width="100%" alt="Magnetic flux flare regression figure 2"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_08_cell_68_plt_figure_figsize_9_6.png" width="100%" alt="Model analysis figure"/>
+
+</td>
 </tr>
 </table>
 
-## Explainable AI — SHAP
+</div>
+
+### 4. Explainable AI — SHAP
+
+<div align="center">
 
 <table>
 <tr>
-<td align="center"><img src="figures/fig_09_cell_69_import_shap.png" width="480"></td>
-<td align="center"><img src="figures/fig_10_cell_72_shap_dependence_plot.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_09_cell_69_import_shap.png" width="100%" alt="SHAP feature importance"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_10_cell_72_shap_dependence_plot.png" width="100%" alt="SHAP dependence plot 1"/>
+
+</td>
 </tr>
 <tr>
-<td align="center"><img src="figures/fig_11_cell_73_shap_dependence_plot.png" width="480"></td>
-<td align="center"><img src="figures/fig_12_cell_74_shap_dependence_plot.png" width="480"></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_11_cell_73_shap_dependence_plot.png" width="100%" alt="SHAP dependence plot 2"/>
+
+</td>
+<td width="50%" align="center">
+
+<img src="figures/fig_12_cell_74_shap_dependence_plot.png" width="100%" alt="SHAP dependence plot 3"/>
+
+</td>
 </tr>
 <tr>
-<td align="center"><img src="figures/fig_13_cell_76_plt_figure_figsize_8_6.png" width="480"></td>
-<td></td>
+<td width="50%" align="center">
+
+<img src="figures/fig_13_cell_76_plt_figure_figsize_8_6.png" width="100%" alt="SHAP interpretation figure"/>
+
+</td>
+<td width="50%" align="center">
+
+</td>
 </tr>
 </table>
 
-For the complete figure set and notebook-cell provenance, see [`figures/README.md`](figures/README.md).
+</div>
+
+For the full figure set and notebook-cell provenance, see [`figures/README.md`](figures/README.md).
 
 ---
 
-# 🧠 Key Scientific Findings
+## ☀️ Main Scientific Takeaways
 
-### 1. Magnetic flux is the dominant aggregate predictor
+<div align="center">
 
-Across classification, XGBoost importance, SHAP and permutation importance, `Phi_max` consistently provides the strongest predictive signal.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 2. Emergence rate is useful but partly redundant
+### 01 · Magnetic flux dominates
 
-`Phi_max` and `R_av` have a Spearman correlation of approximately:
+`Phi_max` consistently provides the strongest reported aggregate predictive signal across the classification benchmark and several interpretation methods.
+
+</td>
+<td width="50%" valign="top">
+
+### 02 · Features are not independent
+
+Magnetic flux, emergence rate, and emergence duration are related. Models may exploit these dependencies instead of discovering new independent predictors.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 03 · More features are not always better
+
+In the controlled regression experiment, the `Phi_max`-only XGBoost configuration outperforms the larger feature sets.
+
+</td>
+<td width="50%" valign="top">
+
+### 04 · Prediction tasks differ
+
+A feature can help distinguish productive regions without accurately estimating the magnitude of their flare productivity.
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### A central statistical relationship
+
+The reported Spearman correlation between `Phi_max` and `R_av` is approximately:
 
 \[
-\rho\approx0.672
+\rho_{\mathrm{Spearman}}\approx0.672
 \]
 
-R_av provides useful information for binary discrimination, but its incremental contribution becomes weak in the controlled continuous regression once Phi_max is included.
+The existing analysis suggests that `R_av` provides some value for binary discrimination, but its incremental contribution to continuous regression becomes weak after including `Phi_max`.
 
-### 3. Alpha contains model-visible nonlinear information
-
-Alpha-related parameters appear in XGBoost importance and SHAP interactions.
-
-However, adding them **does not improve the controlled continuous-regression benchmark**.
-
-### 4. Emergence duration requires careful interpretation
-
-The spectacular improvement from adding emergence duration is largely explained by:
-
-\[
-\Phi_{\max}\approx R_{av}\times t_{\mathrm{emergence}}
-\]
-
-Therefore, duration should not be presented as an independent causal discovery.
-
-### 5. Classification and regression answer different questions
-
-R_av achieves useful binary discrimination:
-
-\[
-ROC\text{-}AUC\approx0.762
-\]
-
-but performs poorly as a standalone continuous flare-productivity predictor:
-
-\[
-CV-R^2\approx0.057
-\]
-
-This is why both classification and regression are evaluated.
+These conclusions are specific to the current catalogue, feature definitions, models, and validation setup.
 
 ---
 
-# ⚠️ Scientific Limitations
+## ⚠️ Limitations and Validation Risks
 
-The current catalogue study is **retrospective**, not an operational forecasting system.
+A retrospective catalogue model is not automatically a forecasting model.
 
-### Aggregate features
+| Limitation | Why it matters |
+|---|---|
+| Small productive sample | Only 34 flare-productive regions are reported in the 2021 catalogue. |
+| Correlated predictors | Feature importance may be shared or redistributed among related variables. |
+| Aggregate features | Maximum flux may summarize information from an entire region's evolution. |
+| Random validation | Related observations may appear in both training and testing if grouping is not enforced. |
+| Retrospective labels | Catalogue productivity does not necessarily represent a defined future forecasting horizon. |
+| Model interpretation | SHAP and permutation importance do not establish causality. |
+| Score variability | Negative R² values in repeated splits indicate unstable out-of-sample regression performance on some splits. |
 
-`Phi_max` summarizes the evolution of an active region and may not be available at the time an operational forecast is required.
-
-### Sample size
-
-The 2021 catalogue contains only **34 flare-productive regions**, making uncertainty and class imbalance important.
-
-### Correlated variables
-
-Magnetic flux, emergence rate and emergence duration are physically and statistically related.
-
-### Validation
-
-Random cross-validation can overestimate generalization when observations from related active regions appear across training and testing.
-
-### Causality
-
-SHAP, permutation importance and feature importance describe model behavior. They **do not establish causal physical relationships**.
+**Research standard:** The reported scores should be reproduced from the canonical notebook, and validation should be checked for active-region overlap and feature leakage before claiming generalization.
 
 ---
 
-# 🛡️ Leakage-Aware Forecasting Design
+## 🛰️ Next Stage — HMI/SHARP Forecasting
 
-The next stage changes the problem from:
+The next research stage is to move from completed active-region catalogue summaries toward **time-resolved observations and explicitly future-oriented targets**.
 
-```text
-Completed active-region evolution
-             ↓
-      Predict productivity
+### From retrospective analysis to forecasting
+
+```mermaid
+flowchart TD
+    A["🛰️ HMI/SHARP Time Series"] --> B["🧹 Quality Control"]
+    B --> C["⏱️ Select Forecast Cutoff"]
+    C --> D["🧮 Build Features from Past Data"]
+    D --> E["🎯 Label Future Event Window"]
+    E --> F["🔒 HARP-Grouped Validation"]
+    F --> G["🤖 Train Forecasting Models"]
+    G --> H["📊 Evaluate & Calibrate"]
+    H --> I["🔬 Interpret & Quantify Uncertainty"]
+
+    style A fill:#243B55,color:#fff,stroke:#00D4FF
+    style B fill:#3D348B,color:#fff,stroke:#A78BFA
+    style C fill:#22577A,color:#fff,stroke:#38BDF8
+    style D fill:#7C3AED,color:#fff,stroke:#C4B5FD
+    style E fill:#B45309,color:#fff,stroke:#FCD34D
+    style F fill:#0369A1,color:#fff,stroke:#7DD3FC
+    style G fill:#6C63FF,color:#fff,stroke:#C4B5FD
+    style H fill:#006D77,color:#fff,stroke:#83C5BE
+    style I fill:#166534,color:#fff,stroke:#86EFAC
 ```
 
-to:
+### Candidate time-dependent features
 
-```text
-Information available at time t
-             ↓
-       Forecast cutoff
-             ↓
-       Future time window
-             ↓
-     Flare / CME occurrence
-```
+The proposed extension may investigate:
 
-For every prediction snapshot:
+- Magnetic flux \(\Phi(t)\)
+- Energy-flux measurements
+- Helicity-flux measurements
+- Normalized helicity measures
+- Temporal derivatives and change rates
+- Rolling-window statistics and variability
+- Pre-event magnetic evolution
 
-\[
-t_{\mathrm{feature}}\leq t_{\mathrm{cutoff}}
-\]
+These are proposed features for the future stage, not a claim that they are already implemented in the current catalogue experiments.
 
-and the target event must occur strictly after the cutoff.
-
-## Planned forecast horizons
+### Forecast horizons
 
 - 6 hours
 - 12 hours
 - 24 hours
 - 48 hours
 
-## Planned SHARP features
+The forecasting dataset must enforce:
 
-The emerging-region extension will use time-dependent quantities such as:
+\[
+t_{\mathrm{feature}}\leq t_{\mathrm{cutoff}}
+\]
 
-- magnetic flux `Phi(t)`
-- energy flux `ΔE(t)`
-- helicity flux `ΔH(t)`
-- normalized helicity `ΔH / Phi²`
-- temporal derivatives
-- rolling-window statistics
-- variability
-- acceleration/change rates
-- pre-event evolution
+The target event must occur **after** the cutoff and within the explicitly defined forecast window.
 
-The eventual dataset will use **HARP/active-region grouped validation** so measurements from the same active region cannot leak into both training and testing.
+### Validation requirements
+
+- Split by HARP or active region to prevent group leakage.
+- Fit preprocessing and feature selection only on training data.
+- Compare against simple, well-defined baselines.
+- Evaluate ROC-AUC and PR-AUC for classification.
+- Assess probability calibration and Brier score.
+- Report uncertainty and performance variability.
+- Test generalization across time periods and solar-cycle conditions.
 
 ---
 
-# 🧪 Reproducibility
+## 🧪 Reproducibility
 
-The **executed Kaggle notebook is the canonical computational record**:
+The existing README identifies the executed Kaggle notebook as the canonical computational record:
 
 [`notebooks/flare-ml-kutsenko-2019-2021.ipynb`](notebooks/flare-ml-kutsenko-2019-2021.ipynb)
 
-Standalone analysis scripts are provided for organization and reproducibility:
+Standalone analysis scripts are organized as follows:
 
 ```text
 scripts/
@@ -579,9 +798,9 @@ scripts/
 └── 04_model_interpretation.py
 ```
 
-## Kaggle / Local Portability
+### Kaggle and local data paths
 
-The notebook automatically detects the Kaggle dataset mount:
+The documented notebook checks for the Kaggle dataset mount and falls back to a local data directory.
 
 ```python
 from pathlib import Path
@@ -596,11 +815,21 @@ DATA_DIR = (
 )
 ```
 
-This allows the analysis to run in Kaggle while remaining portable to a cloned GitHub repository.
+Confirm that the expected files exist under `DATA_DIR` before loading the data.
+
+### Recommended reproduction checks
+
+1. Confirm the source files and catalogue row counts.
+2. Reproduce the statistical summaries.
+3. Re-run the model benchmarks and feature-ablation experiments.
+4. Verify that the same splits and scoring definitions are used for comparisons.
+5. Reproduce SHAP and permutation-importance results.
+6. Confirm the generated figures match the reported tables.
+7. Record dependency versions, random seeds, and any differences between local and Kaggle execution.
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 solar-ar-kutsenko-ml/
@@ -636,69 +865,104 @@ solar-ar-kutsenko-ml/
 │   └── KAGGLE_NOTEBOOK_EXACT_RESULTS.md
 │
 └── figures/
-    ├── notebook-generated figures
     └── README.md
 ```
 
 ---
 
-# 🚀 Research Roadmap
+## 🗺️ Research Roadmap
 
-### ✅ Completed
+<div align="center">
 
-- [x] Kutsenko 2019 catalogue analysis
-- [x] Emergence-rate scaling analysis
-- [x] Linear Regression
-- [x] Random Forest
-- [x] Gradient Boosting
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ✅ Current catalogue study
+
+- [x] Kutsenko 2019 emergence-rate analysis
+- [x] Linear Regression and tree-based benchmarks
 - [x] Kutsenko 2021 flare classification
 - [x] Continuous flare-productivity regression
-- [x] XGBoost benchmarking
 - [x] Controlled feature ablation
 - [x] Repeated cross-validation
-- [x] SHAP analysis
-- [x] Permutation importance
+- [x] SHAP and permutation importance
 - [x] SHAP interaction analysis
 - [x] Scientific interpretation
 - [x] Leakage-aware forecasting design
 
-### 🔄 Next Research Stage
+</td>
+<td width="50%" valign="top">
 
-- [ ] Build an emerging-active-region catalogue from HMI/SHARP time series
-- [ ] Integrate magnetic-energy and helicity-flux measurements
-- [ ] Construct time-resolved features
-- [ ] Define strict prediction cutoffs
-- [ ] Construct future flare/CME labels
-- [ ] Use HARP-grouped train/test splitting
+### 🔄 Future research
+
+- [ ] Build a time-resolved HMI/SHARP dataset
+- [ ] Integrate energy- and helicity-flux measurements
+- [ ] Define forecast cutoffs and future event labels
+- [ ] Implement HARP-grouped train/test splitting
 - [ ] Evaluate 6/12/24/48-hour forecasts
-- [ ] Probability calibration
-- [ ] Uncertainty estimation
-- [ ] Cross-cycle validation
+- [ ] Calibrate forecast probabilities
+- [ ] Quantify uncertainty
+- [ ] Validate across time periods and solar-cycle conditions
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
-# ⭐ Project Takeaway
+## ⭐ Final Takeaway
 
-The central result of this project is not simply that one machine-learning model achieved a high score.
+The central contribution of this project is not simply achieving a high machine-learning score. It is combining statistical modelling, controlled experiments, model interpretation, and physical reasoning to understand what the models actually learn.
 
-The important result is the **combination of statistical modelling, controlled ML experiments and physical interpretation**:
+<div align="center">
 
-\[
-\boxed{
-\text{Physical hypothesis}
-\rightarrow
-\text{Statistical analysis}
-\rightarrow
-\text{ML}
-\rightarrow
-\text{Feature ablation}
-\rightarrow
-\text{Explainability}
-\rightarrow
-\text{Physical interpretation}
-}
-\]
+```mermaid
+flowchart LR
+    A["Physical Hypothesis"] --> B["Statistical Analysis"]
+    B --> C["Machine Learning"]
+    C --> D["Feature Ablation"]
+    D --> E["Explainability"]
+    E --> F["Physical Interpretation"]
+    F --> G["Time-Aware Forecasting"]
 
-The current catalogue analysis establishes the benchmark.
+    style A fill:#243B55,color:#fff,stroke:#00D4FF
+    style B fill:#22577A,color:#fff,stroke:#38BDF8
+    style C fill:#6C63FF,color:#fff,stroke:#C4B5FD
+    style D fill:#9B5DE5,color:#fff,stroke:#E9D5FF
+    style E fill:#0891B2,color:#fff,stroke:#67E8F9
+    style F fill:#006D77,color:#fff,stroke:#83C5BE
+    style G fill:#166534,color:#fff,stroke:#86EFAC
+```
 
-The next stage is to move from retrospective quantities to **time-resolved HMI/SHARP measurements**, where the model must predict future solar activity using only information available before the forecast time.
+</div>
+
+The current catalogue experiments provide a retrospective benchmark. The next challenge is to build a forecasting system that uses only information available before an event, validates on unseen active regions, and quantifies uncertainty honestly.
+
+---
+
+<div align="center">
+
+### 👨‍🔬 Author
+
+**Shubham Jha**
+
+Solar Physics · Statistical Analysis · Machine Learning · Data Science
+
+<a href="https://github.com/shubham-k-jha">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="https://www.linkedin.com/in/shubham-k-jha/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://shubham-k-jha.github.io/">
+<img src="https://img.shields.io/badge/Portfolio-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
+</a>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,45:6C63FF,100:071E3D&height=110&section=footer" width="100%" alt="Decorative footer"/>
+
+</div>
